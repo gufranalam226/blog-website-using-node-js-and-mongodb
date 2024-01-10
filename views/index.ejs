@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="heading">
+        <h1>Welcome to out blog page</h1>
+        <button class="article-btn"><a type="button" href="article/new" >New article</a></button>
+        
+    </div>
+    <div class="art-sec">
+        <% article.forEach(element =>{ %>
+            <div class="article">
+                <h1><%= element.title.substring(0 , 50)%></h1>
+                <div><%= element.content.substring(0 , 120) %></div>
+                <div><%= element.additionalInfo.substring(0 , 10) %></div>
+                <div><%= element.createdAt.toLocaleDateString() %></div>
+
+            </div>
+            <div class="button">
+                <a href="/article/<%= element.slug %>" class="btn">read more</a>
+                <!-- <a href="/article/edit/<%= element.id %>">edit</a> -->
+                <a href="/article/delete/<%= element.id %>" class="btn">delete</a>
+            </div>
+       <% }) %>
+    </div>
+</div>
+
