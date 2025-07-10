@@ -1,0 +1,58 @@
+<!-- <div class="container">
+    <div class="headding">
+        <a href="/" class="home-btn">Home</a>
+    </div>
+    <div class="article-section">
+        <form action="/article" method="post">
+            <input name="title" type="text" class="title" placeholder="Enter the title of the article"><br>
+            <textarea name="content" class="article1" cols="30" rows="20" placeholder="Start writing your article"></textarea><br>
+            <textarea name="additionalInfo" class="add-info" cols="30" rows="5" placeholder="Additiional information"></textarea>
+            <button type="submit" class="submit-btn">Publish</button>
+        </form>
+        
+
+    </div>
+</div> -->
+
+<div class="container">
+  <header class="header">
+    <a href="/" class="home-btn">🏠 Home</a>
+  </header>
+
+  <main class="article-section">
+    <form action="/article" method="POST" class="article-form">
+      <h2 class="form-heading">📝 Create a New Article</h2>
+
+      <label for="title" class="form-label">Title</label>
+      <input
+        id="title"
+        name="title"
+        type="text"
+        class="form-input"
+        placeholder="Enter article title"
+        required
+      />
+
+      <label for="content" class="form-label">Content</label>
+      <textarea
+        id="content"
+        name="content"
+        class="form-textarea"
+        rows="10"
+        placeholder="Start writing your article..."
+        required
+      ></textarea>
+
+      <label for="additionalInfo" class="form-label">Additional Info (Optional)</label>
+      <textarea
+        id="additionalInfo"
+        name="additionalInfo"
+        class="form-textarea small"
+        rows="4"
+        placeholder="Any references, tags, or notes..."
+      ></textarea>
+
+      <button type="submit" class="submit-btn">🚀 Publish</button>
+    </form>
+  </main>
+</div>

@@ -1,0 +1,30 @@
+<!-- <div class="container">
+    <div class="heading">
+        <h1>Welcome to out blog page</h1>
+        <button class="article-btn"><a type="button" href="/" >Home</a></button>
+        
+    </div>
+
+    <div>
+        <div class="show-title"><%= article.title %></div>
+        <div class="show-content"><%= article.content %></div>
+        <div class="show-info"><%= article.additionalInfo %></div>
+    </div>
+</div> -->
+
+
+<div class="container">
+  <header class="header">
+    <h1 class="page-title">📰 Welcome to Our Blog Page</h1>
+    <a href="/" class="home-link">🏠 Home</a>
+  </header>
+
+  <main class="article-display">
+    <h2 class="article-title"><%= article.title %></h2>
+    <article class="article-content"><%= article.content %></article>
+    <section class="article-info">
+      <h4>Additional Info</h4>
+      <p><%= article.additionalInfo %></p>
+    </section>
+  </main>
+</div>
